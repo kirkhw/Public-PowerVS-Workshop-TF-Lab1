@@ -17,7 +17,7 @@ variable "ibm_cloud_zone" {
   type        = string
   default     = ""
   validation {
-    condition     = contains(["syd04", "syd05", "eu-de-1", "eu-de-2", "lon04", "lon06", "wdc04", "us-east", "us-south", "dal12", "dal13", "tor01", "tok04", "osa21", "sao01", "mon01"], var.ibm_cloud_zone)
+    condition     = contains(["syd04", "syd05", "eu-de-1", "eu-de-2", "lon04", "lon06", "wdc04", "us-east", "us-south", "dal10", "dal12", "dal13", "tor01", "tok04", "osa21", "sao01", "mon01"], var.ibm_cloud_zone)
     error_message = "Only Following DC values are supported :  syd04, syd05, eu-de-1, eu-de-2, lon04, lon06, wdc04, us-east, us-south, dal10, dal12, dal13, tor01, tok04, osa21, sao01, mon01"
   }
 }
